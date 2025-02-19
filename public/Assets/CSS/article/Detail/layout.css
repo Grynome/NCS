@@ -1,0 +1,68 @@
+:root {
+    --yellow: #ffc600;
+}
+
+.post p {
+    line-height: 1.8;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.post a {
+    color: black;
+    text-decoration: underline wavy var(--yellow);
+}
+
+.post h1,
+.post h2 {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+}
+
+.post {
+    display: grid;
+    max-width: 1250px;
+    margin: 75px auto;
+    grid-template-columns: 5fr 30fr 7fr;
+    grid-gap: 10px 20px;
+}
+
+/* Mobile Phones and tablets */
+@media (min-width: 320px) and (max-width: 767px) {
+    .post {
+        margin: 20px auto;
+    }
+}
+
+.post>* {
+    grid-column: 2 / -2;
+}
+.post>div.download-section {
+    padding: 10px;
+}
+.post>div.popular-insights {
+    padding: 10px;
+    grid-row: span 5;
+    align-self: start;
+}
+.post>blockquote {
+    background: #EBEBEB;
+    padding: 10px;
+    grid-row: span 5;
+    align-self: start;
+}
+
+.tip-left {
+    grid-column: 1 / span 1;
+    text-align: right;
+    border-right: 2px solid var(--yellow);
+}
+
+.popular-insights,
+.download-section {
+    grid-column: span 1 / -1;
+}

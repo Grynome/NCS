@@ -1,0 +1,203 @@
+/*--- 2.4 Featured Post ----*/
+.feature_slider_active{
+    width: 58%;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+.feature_slider_active .fs_sitem{
+    position: relative;
+    outline: none;
+    border: none;
+    padding-right: 30px;
+}
+.fs_sitem .rc_meta{
+    margin: 0 0 6px;
+}
+
+.fs_sitem a {
+    text-decoration: none;
+}
+.fs_sitem .rc_meta .commnet{
+    margin-left: 18px;
+}
+.fs_sitem h3{
+    font-size: clamp(18px, 4vw, 24px);
+    line-height: 36px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.fs_sitem h3 a{
+    color: inherit;
+}
+.fs_sitem h3 a:hover{
+    color: #0f2339;
+}
+.fs_sitem .cm_author {
+    font-size: 15px;
+    color: #ffffff;
+    line-height: .8;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.fs_sitem .cm_author a {
+    color: inherit;
+}
+
+.fs_sitem .cm_author a:hover {
+    color: #4470b7;
+}
+.fs_sitem .view{
+    margin-right: 10px;
+}
+
+.fs_sitem .desc-updates {
+    font-size: clamp(16px, 3vw, 20px);
+    color: #fff;
+}
+.feature_item_slide{
+    width: 42%;
+    padding-right: 96px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.feature_item_slide .f_sitem{
+    position: relative;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.feature_item_slide .f_sitem:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    content: '';
+}
+.f_sitem img{
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.f_sitem:hover img {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.counting_bar{
+    width: 2px;
+    height: 88%;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+}
+.counting_bar h1{
+    font-size: 90px;
+    line-height: 46px;
+    color: #fff;
+    position: absolute;
+    top: -71px;
+    bottom: auto;
+    right: 0;
+    margin: 0;
+    font-weight: 600;
+}
+@media (max-width: 767px) {
+    .fs_sitem h3 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .feature_slider_active {
+        width: 100%;
+        padding: 70px 0 50px;
+        padding-right: 15px;
+    }
+
+    .feature_item_slide {
+        width: 100%;
+        padding-right: 15px;
+        padding-bottom: 60px;
+    }
+}
+.featured_post_section_2 {
+    position: relative;
+    background: url(../../Images/banners/ilmiah.jpg) no-repeat fixed center center / cover;
+    padding: 115px 0 0;
+}
+
+.featured_post_section_2:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    content: '';
+}
+
+.rc_meta {
+    display: flex;
+}
+
+.rc_meta a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: .40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 18px;
+}
+
+.rc_meta a.like {
+    font-size: 18px;
+    color: #999999;
+    letter-spacing: .36px;
+    margin-right: 0;
+}
+
+.rc_meta a i {
+    display: inline-block;
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.rc_meta a:hover {
+    color: #999999;
+}
+
+.rc_meta a.like:hover {
+    color: #4470b7;
+}
+.rc_meta .commnet {
+    font-size: 18px;
+    color: #999999;
+    letter-spacing: .36px;
+    margin-right: 0;
+}
+
+.rc_meta a.commnet i {
+    font-size: 16px;
+    top: 0;
+}
+
+.rc_meta .commnet:hover {
+    color: #4470b7;
+}

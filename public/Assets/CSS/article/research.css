@@ -1,0 +1,332 @@
+/* highligt head article */
+:root {
+    --box-x-padding: 2rem;
+    --box-y-padding: 2rem;
+}
+
+@media (min-width: 40em) {
+    :root {
+        --box-y-padding: 4rem;
+    }
+}
+
+@media (min-width: 60em) {
+    :root {
+        --box-x-padding: 3rem;
+        --box-y-padding: 6rem;
+    }
+}
+
+@media (min-width: 40em) {
+    .research-highlight {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "img title"
+            "img content";
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 20px;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .research-highlight .highlight-title {
+        grid-area: title;
+        padding-top: var(--box-y-padding);
+        padding-left: var(--box-x-padding);
+    }
+
+    .research-highlight .content--research-highlight {
+        grid-area: content;
+        padding-bottom: var(--box-y-padding);
+        padding-left: var(--box-x-padding);
+        padding-right: var(--box-x-padding);
+    }
+
+    .research-highlight .img-head-highlight {
+        grid-area: img;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+.research-highlight .highlight-title {
+    font-size: clamp(18px, 4vw, 24px);
+    margin: 0 0 1rem;
+    position: relative;
+}
+
+
+@media (min-width: 40em) {
+}
+
+.research-highlight .content--research-highlight {
+    color: #4d4d4d;
+    margin-bottom: var(--box-y-padding);
+}
+
+@media (min-width: 40em) {
+    .research-highlight .content--research-highlight {
+        margin-bottom: 0;
+    }
+}
+
+.research-highlight .highlight-desc {
+    font-size: clamp(16px, 3vw, 20px);
+    margin-top: 0;
+    margin-bottom: var(--box-y-padding);
+    line-height: 1.5;
+}
+
+.research-highlight .img-head-highlight {
+    position: relative;
+}
+
+.research-highlight img {
+    max-width: 100%;
+    vertical-align: middle;
+    box-shadow: 0 0.2em 1.2em rgba(61, 48, 41, 0.1);
+}
+
+@media (max-width: 767px) {
+    .research-highlight {
+        padding: 0 15px;
+    }
+}
+
+/* END */
+
+/*	#CLEARFIX
+============================================================*/
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+
+.row,
+.clearfix {
+    zoom: 1;
+}
+
+/* #BLOG SECTION 1 #NEW
+=====================================================*/
+.intro-demo .post-prev-img {
+    border: 7px solid #e8e8e8;
+}
+
+.grey-light-bg .intro-demo .post-prev-img {
+    border: 7px solid #d3d3d3;
+}
+
+.post-prev-img {
+    margin-bottom: 25px;
+}
+
+.post-prev-img img {
+    width: 100%;
+}
+
+.post-prev-title h3 {
+    margin: 0;
+}
+
+.blog-main-posts .post-prev-img {
+    margin-bottom: 30px;
+}
+
+.blog-main-posts .post-prev-info {
+    margin-bottom: 20px;
+}
+
+.blog-main-posts .post-prev-title h3 {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.post-prev-img a:hover {
+    opacity: .6;
+}
+
+.post-prev-img .lightbox-item a:hover {
+    opacity: 1;
+}
+
+.section-more {
+    font-size: 14px;
+    font-weight: normal;
+    color: #7e8082;
+}
+
+.section-more:hover {
+    color: #101010;
+}
+
+.section-more .icon {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.post-prev-info {
+    margin-bottom: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.slash-divider {
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.slash-divider-10 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.post-prev-text {
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: lighter;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5;
+}
+
+.blog-more {
+    font-weight: 600;
+}
+
+.icon-count {
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+.post-prev-count {
+    margin-left: 12px;
+    color: #7e8082;
+}
+
+.post-prev-more-cont {
+    position: relative;
+}
+
+.no-border {
+    border: none;
+}
+
+@media (max-width: 480px) {
+
+    .section-more.left,
+    .section-more.right {
+        float: none !important;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+/* #BLOG SECTION 2 #NEW
+=====================================================*/
+.blog2-post-title-cont,
+.blog2-post-prev-text {
+    margin-bottom: 20px;
+}
+
+.blog2-post-title-cont .post-prev-title {
+    padding: 15px 0 15px 20px;
+    margin-left: 120px;
+    border-left: #C9CACB 1px solid;
+}
+
+.blog2-post-title-cont {
+    position: relative;
+}
+
+.post-prev-date-cont {
+    position: absolute;
+    top: 24px;
+    left: 15px;
+}
+
+.blog2-date-numb {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.blog2-month {
+    font-size: 13px;
+    padding-left: 3px;
+}
+
+.blog2-post-title-cont .post-prev-info {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .blog2-month {
+        display: block;
+        line-height: 18px;
+        padding-left: 0;
+    }
+
+    .blog2-post-title-cont .post-prev-title {
+        margin-left: 70px;
+    }
+
+    .blog2-date-numb {
+        font-size: 30px;
+    }
+
+    .post-prev-date-cont {
+        top: 16px;
+        text-align: center;
+    }
+}
+
+.canal-desc a {
+    color: #4b4e53;
+    outline: none !important;
+    text-decoration: none;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.canal-desc a:hover {
+    color: #97999c;
+    text-decoration: none;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+}
+
+.canal-desc a:focus {
+    text-decoration: none !important;
+}
+
+.canal-desc a:hover,
+.canal-desc a:focus {
+    color: #97999c;
+    text-decoration: none;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+}
